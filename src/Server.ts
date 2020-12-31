@@ -1,4 +1,3 @@
-import { Socket } from "dgram";
 import * as net from "net";
 
 let server = net.createServer((socket) => {
