@@ -1,0 +1,26 @@
+{
+  "name": "unitygameserver",
+  "description": "Following the tutorial: [How to Make a Multiplayer Online Game With Unity3D and Node js](https://www.youtube.com/watch?v=uD1320SRAzo&list=PLk7KwJVEdYZj7MpGY0eMYjjLmQfUiaNSZ)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/Server.ts",
+    "prod": "tsc && node ./build/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vchu22/UnityGameServer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vchu22/UnityGameServer/issues"
+  },
+  "homepage": "https://github.com/vchu22/UnityGameServer#readme",
+  "dependencies": {
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
+  }
+}
