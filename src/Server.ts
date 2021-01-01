@@ -1,7 +1,14 @@
 import * as net from "net";
+import Timer from "./Utils/Timer"
+
+let timer = new Timer();
 
 let server = net.createServer((socket) => {
-    console.log(`${socket.remoteAddress} has been connected!`);
+    timer.executeAfter(5).then(() => {
+        socket.write("connected", "utf-8");
+        socket.pipe(socket);
+        console.log(`${socket.remoteAddress} has been connected!`);
+    })
 })
 
 const PORT = 8080
